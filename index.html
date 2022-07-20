@@ -11,46 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="js/bootstrap.js" />
-  </head>
+    <link rel="stylesheet" href="js/bootstrap.js" /></head
+  >clear
   <body>
     <div class="container">
-      <!-- Example Code -->
-
-      <div aria-live="polite" aria-atomic="true" class="position-relative">
-        <!-- Position it: -->
-        <!-- - `.toast-container` for spacing between toasts -->
-        <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
-        <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
-        <div class="toast-container top-0 end-0 p-3 my-toast d-none">
-          <!-- Then put toasts within -->
-          <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <img src="ao1mini.png" alt="Logo AO1" class="rounded me-2" />
-              <strong class="me-auto">Admin AO1</strong>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">yokoso, watashi tachi no sekai da!</div>
-          </div>
-
-          <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <img src="ao1mini.png" alt="Logo AO1" class="rounded me-2" />
-              <strong class="me-auto">Admin AO1</strong>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body"><a href="https://chat.whatsapp.com/EVs4AZVlGmBBvNCNVc3vuZ" target="_blank">klik disini</a> untuk masuk kedalamnya!</div>
-          </div>
-        </div>
-      </div>
-      <!-- End Example Code -->
-
       <!-- Mulai Form -->
       <div class="row justify-content-center">
         <div class="col-lg-7">
           <div class="card p-4 shadow-lg mb-5 border-0 my-4">
             <img src="logoao1.png" alt="Anime Organization 1" class="d-block mx-auto" />
             <h4 class="py-2 text-center">WELCOME TO <b>AO1</b> COME JOIN US!</h4>
+            <div class="alert alert-primary d-none my-alert" role="alert">
+              yokoso, watashi tachi no sekai da!. Klik disini untuk masuk<a href="https://chat.whatsapp.com/EVs4AZVlGmBBvNCNVc3vuZ" class="alert-link" target="_blank">ke dalamnya!</a>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <form action="" name="pendaftaran-ao1">
               <div class="form-group mb-3">
                 <input type="text" placeholder="Masukkan Nama Lengkap" class="form-control rounded-pill" name="nama" />
@@ -144,7 +118,7 @@
       const form = document.forms["pendaftaran-ao1"];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
-      const myToast = document.querySelector(".my-toast");
+      const myToast = document.querySelector(".my-alert");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
