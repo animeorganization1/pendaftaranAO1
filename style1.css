@@ -1,0 +1,19 @@
+body {
+  background-color: #23cff4;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  box-sizing: border-box;
+  margin-top: 2rem;
+  background-color: white;
+  width: 1000px;
+  border: 5px solid #56d6f2;
+  border-radius: 30px;
+}
+.container h1 {
+  text-align: center;
+}
+.container .gambar img {
+  border-radius: 40px;
+  max-width: 400px;
+}
